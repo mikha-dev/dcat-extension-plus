@@ -10,15 +10,15 @@ use Illuminate\Routing\Controller;
 
 class DcatPlusSiteController extends Controller
 {
-    public function index(Content $content): Content
-    {
-        return $content->header('增强配置')
-            ->description('提供了一些对站点增强的配置')
-            ->body(function (Row $row) {
-                $tab = new Tab();
-                $tab->add('站点配置', new DcatPlusSiteForm(), true);
-                $tab->addLink('UI优化', admin_route('dcat-plus.ui.index'));
-                $row->column(12, $tab->withCard());
-            });
-    }
+     public function index(Content $content): Content
+     {
+         return $content->header('Enhanced Configuration')
+             ->description('Provides some enhanced site configuration')
+             ->body(function (Row $row) {
+                 $tab = new Tab();
+                 $tab->add('Site Configuration', new DcatPlusSiteForm(), true);
+                 $tab->addLink('UI optimization', admin_route('dcat-plus.ui.index'));
+                 $row->column(12, $tab->withCard());
+             });
+     }
 }

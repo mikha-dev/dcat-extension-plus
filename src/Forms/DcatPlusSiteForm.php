@@ -19,7 +19,7 @@ class DcatPlusSiteForm extends Form
         admin_setting($input);
         return $this
             ->response()
-            ->success('站点配置更新成功！')
+            ->success('Site configuration update successfully!')
             ->refresh();
     }
 
@@ -29,12 +29,12 @@ class DcatPlusSiteForm extends Form
     public function form()
     {
         $this->url('site_url', Support::trans('main.site_url'))
-            ->help('站点域名决定了静态资源（头像、图片等）的显示路径，可以包含端口号，例如 http://chemex.it:8000 。')
+            ->help('The domain name of the site determines the display path of static resources (avatars, pictures, etc.), which can include the port number, such as http://chemex.it:8000.')
             ->default(admin_setting('site_url'));
         $this->text('site_title', Support::trans('main.site_title'))
             ->default(admin_setting('site_title'));
         $this->text('site_logo_text', Support::trans('main.site_logo_text'))
-            ->help('文本LOGO显示的优先度低于图片，当没有上传图片作为LOGO时，此项将生效。')
+            ->help('The priority of text LOGO display is lower than that of pictures. This item will take effect when there is no picture uploaded as LOGO.')
             ->default(admin_setting('site_logo_text'));
         $this->image('site_logo', Support::trans('main.site_logo'))
             ->autoUpload()
@@ -45,12 +45,12 @@ class DcatPlusSiteForm extends Form
             ->uniqueName()
             ->default(admin_setting('site_logo_mini'));
         $this->switch('site_debug', Support::trans('main.site_debug'))
-            ->help('开启 debug 模式后将会显示异常捕获信息，关闭则只返回 500 状态码。')
+            ->help('When the debug mode is turned on, the exception capture information will be displayed, and when the debug mode is turned off, only the 500 status code will be returned.')
             ->default(admin_setting('site_debug'));
         $this->radio('site_lang', Support::trans('main.site_lang'))
             ->options([
-                'zh_CN' => '中文（简体）',
-                'en' => 'English'
+                'en' =>'English',
+                'zh_CN' =>'Chinese (Simplified)'
             ])
             ->default(admin_setting('site_lang'));
     }

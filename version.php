@@ -2,46 +2,46 @@
 
 return [
     '1.0.0' => [
-        '原始版本发布',
+        'Original version released',
     ],
     '1.0.1' => [
-        '增加调试模式开关 & 侧栏子菜单缩进增加',
+        'Add debug mode switch & increase indentation of sidebar submenu',
     ],
     '1.0.2' => [
-        '扩展表单字段 selectCreate 为 select 字段的升级版，支持快速创建。',
+        'The extended form field selectCreate is an upgraded version of the select field, which supports quick creation. ',
     ],
     '1.0.3' => [
-        '增加扩展图标和别名。',
+        'Add extended icons and aliases. ',
     ],
     '1.0.4' => [
-        '增加表单提交预处理过滤，防止XSS攻击。',
+        'Add pre-processing filtering of form submission to prevent XSS attacks. ',
     ],
     '1.0.5' => [
-        '优化表单提交预处理过滤，不再依赖第三方包。',
+        'Optimize form submission pre-processing filtering, no longer rely on third-party packages. ',
     ],
     '1.0.6' => [
-        'selectCreate组件的颜色改为主题色。',
-        'UI增加表格行操作按钮紧贴最右侧。'
+        'The color of the selectCreate component is changed to the theme color. ',
+        'UI adds table row operation buttons close to the far right. '
     ],
     '1.0.7' => [
-        '支持DcatAdmin 2.0.18beta。',
-        '暂时移除侧栏菜单子菜单缩进（不兼容）。',
-        '增加水平菜单选项。',
-        '原先的头部块状显示改为边距优化'
+        'Support DcatAdmin 2.0.18beta. ',
+        'Temporarily remove the sidebar menu submenu indentation (not compatible). ',
+        'Add horizontal menu options. ',
+        'The original head block display is changed to margin optimization'
     ],
     '1.0.8' => [
-        '提供了自定义颜色的支持入口',
+        'Provides a support entrance for custom colors',
     ],
     '1.0.9' => [
-        '移除HTML、JS过滤',
-        '移除部分UI优化'
+        'Remove HTML, JS filtering',
+        'Remove some UI optimization'
     ],
     '1.1.0' => [
-        '修复debug配置无效的问题',
-        '自动注入扩展字段',
-        '移除了一些无用的配置'
+        'Fix the problem of invalid debug configuration',
+        'Automatically inject extension fields',
+        'Removed some useless configurations'
     ],
     '1.1.1' => [
-        '增加详情页视频扩展字段',
+        'Add the video extension field on the detail page',
     ],
 ];

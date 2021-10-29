@@ -1,7 +1,7 @@
 {
   "name": "mikha-dev/dcat-extension-plus",
-  "description": "增强 DcatAdmin 的使用体验。",
-  "alias": "Dcat 增强工具",
+  "description": "DcatAdmin",
+  "alias": "Dcat",
   "type": "library",
   "keywords": [
     "dcat-admin",

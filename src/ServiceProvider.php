@@ -30,13 +30,13 @@ class ServiceProvider extends BaseServiceProvider
             AfterInjectDcatPlus::class,
         ]
     ];
-    // protected $menu = [
-    //     [
-    //         'title' => 'Dcat Plus',
-    //         'uri' => 'dcat-plus/site',
-    //         'icon' => 'feather icon-settings'
-    //     ]
-    // ];
+    protected $menu = [
+        [
+            'title' => 'Dcat Plus',
+            'uri' => 'dcat-plus/site',
+            'icon' => 'feather icon-settings'
+        ]
+    ];
 
     public function register()
     {

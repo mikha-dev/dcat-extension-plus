@@ -6,7 +6,7 @@ return [
      'site_logo' =>'LOGO',
      'site_logo_mini' =>'LOGO (miniature)',
      'site_debug' =>'Debug mode',
-     'footer_remove' =>'Remove bottom authorization',
+     'footer_remove' =>'Remove footer',
      'select_create' =>'Quickly create options',
      'theme_color' =>'Theme color',
      'sidebar_style' =>'Menu style',
